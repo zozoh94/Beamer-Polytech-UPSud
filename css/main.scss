@@ -1,0 +1,23 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+    "github_light",
+    "pygment_trac",
+    "stylesheet"
+;
+
+.highlight,
+pre {
+  background-color: #fff;
+}
+
+pre {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+}
