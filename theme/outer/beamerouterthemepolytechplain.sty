@@ -81,7 +81,7 @@
           \pgfusepath{fill}
 
           \pgfsetcolor{themecolor}
-          % red surface at top of the slide
+          % blue surface at top of the slide
           \pgfpathmoveto{\pgfpoint{0cm}{\the\paperheight-2.52cm}}
           \pgfpathlineto{\pgfpoint{\the\paperwidth-1.417cm}{\the\paperheight-2.52cm}}
           \pgfpathlineto{\pgfpoint{\the\paperwidth-0.7118cm}{\the\paperheight}}
@@ -89,7 +89,7 @@
           \pgfusepath{fill}
         }{}
 
-        % page number and TU/e logo
+        % page number and Polytech logo
         \ifbeamer@official
           \pgfsetcolor{white}
           \pgfpathrectangle{\pgfpoint{0cm}{0cm}}{\pgfpoint{\the\paperwidth}{\the\paperheight-1.889cm}}
@@ -99,12 +99,12 @@
             \pgfpathlineto{\pgfpoint{\the\paperwidth}{\the\paperheight-1.889cm}}
             \pgfpathlineto{\pgfpoint{\the\paperwidth}{\the\paperheight-1.883cm}}
             \pgfpathlineto{\pgfpoint{0cm}{\the\paperheight-1.883cm}}
-            \pgfusepath{fill}              % TU/e logo
+            \pgfusepath{fill}              % Polytech logo
             \pgftext[at=\pgfpoint{\the\paperwidth-0.504cm}{0.567cm},right,base]{%
-              \TUElogo
+              \polytechlogo
             }
-            \pgfsetcolor{tuedarkblue}
-            % red surface at top of the slide
+            \pgfsetcolor{polytechdarkblue}
+            % blue surface at top of the slide
             \pgfpathmoveto{\pgfpoint{\the\paperwidth-2.488cm-0.163cm}{0cm}}
             \pgfpathlineto{\pgfpoint{\the\paperwidth}{0cm}}
             \pgfpathlineto{\pgfpoint{\the\paperwidth}{0.567cm}}
@@ -133,15 +133,15 @@
                   {\tiny\insertpagenumber/\pageref{LastPage}}%
               \fi
             }{}
-            % TU/e logo
+            % Polytech logo
             \pgftext[at=\pgfpoint{\the\paperwidth-0.189cm}{0.189cm},right,base]{%
-              \TUElogo
+              \polytechlogo
             }
         \fi
 
         \ifbeamer@official
 %            % diagonal line
-%            \pgfsetcolor{tuered}
+%            \pgfsetcolor{polytechblue}
 %            \pgfpathmoveto{\pgfpoint{\the\paperwidth-5.13cm}{0cm}}
 %            \pgfpathlineto{\pgfpoint{\the\paperwidth-0.64cm}{\the\paperheight}}
 %            \pgfpathlineto{\pgfpoint{\the\paperwidth-0.62cm}{\the\paperheight}}
@@ -155,10 +155,10 @@
 
         % department text at bottom of slide
         \pgftext[at=\pgfpoint{0.252cm}{0.252cm},left,base]{%
-          \color{tuedarkblue}\fontfamily{zlo}\selectfont%
+          \color{polytechdarkblue}\fontfamily{zlo}\selectfont%
             \tiny%
             \dept
-          \hspace{1.26cm}\color{tuered}\fontfamily{zmb}\selectfont\tiny\statustext
+          \hspace{1.26cm}\color{polytechblue}\fontfamily{zmb}\selectfont\tiny\statustext
           }%
         \pgfsetcolor{black}
         \pgfpathrectangle{\pgfpoint{0cm}{0cm}}{\pgfpoint{\the\paperwidth}{\the\paperheight}}
@@ -199,7 +199,7 @@
             \pgfpathlineto{\pgfpoint{\the\paperwidth}{\the\paperheight-1.98cm}}
             \pgfpathlineto{\pgfpoint{0cm}{\the\paperheight-1.98cm}}
             \pgfusepath{fill}
-            \pgfsetcolor{tuedarkblue}
+            \pgfsetcolor{polytechdarkblue}
             % surface left of main image
             \pgfpathmoveto{\pgfpoint{0cm}{\the\paperheight-7.56cm}}
             \pgfpathlineto{\pgfpoint{\the\paperwidth-4.82cm}{\the\paperheight-7.56cm}}
@@ -222,7 +222,7 @@
 
 
         % diagonal line
-        \pgfsetcolor{tuered}
+        \pgfsetcolor{polytechlightgreen}
         \ifdim\beamer@paperheight=9.00cm%
           \pgfpathmoveto{\pgfpoint{\the\paperwidth-5.24cm}{0cm}}
           \pgfpathlineto{\pgfpoint{\the\paperwidth-2.64cm}{\the\paperheight}}
@@ -248,12 +248,12 @@
         \pgfpathlineto{\pgfpoint{0cm}{\the\paperheight-1.99cm}}
         \pgfusepath{fill}
 
-        % TU/e slogan: Where innovation starts
+        % Polytech slogan: Where innovation starts
         \ifbeamer@innovation
           \ifdim\beamer@paperheight=9.00cm%
-            \pgftext[at=\pgfpoint{\the\paperwidth-6.5cm}{0.82cm},right,top]{\color{tuedarkblue}\normalfont\normalsize\tiny\selectfont\bfseries Where innovation starts}%
+            \pgftext[at=\pgfpoint{\the\paperwidth-6.5cm}{0.82cm},right,top]{\color{polytechdarkblue}\normalfont\normalsize\tiny\selectfont\bfseries Where innovation starts}%
           \else%
-            \pgftext[at=\pgfpoint{\the\paperwidth-2.2cm}{0.441cm},right,base]{\color{tuedarkblue}\normalfont\normalsize\tiny\selectfont\bfseries Where innovation starts}%
+            \pgftext[at=\pgfpoint{\the\paperwidth-2.2cm}{0.441cm},right,base]{\color{polytechdarkblue}\normalfont\normalsize\tiny\selectfont\bfseries Where innovation starts}%
           \fi%
         \fi
 
@@ -279,15 +279,15 @@
         \ifnum\thepage=1\relax\else
         \pgftext[at=\pgfpoint{\the\paperwidth-0.76cm}{\the\paperheight-2.39cm},left,base]{\thepage}%
         \fi
-        % TU/e logo
+        % Polytech logo
         \pgftext[at=\pgfpoint{\the\paperwidth-6.05cm}{\the\paperheight-7.87cm},left,top]{%
-          \TUElogo
+          \polytechlogo
         }
 
         \ifdim\beamer@paperheight=9.00cm%
-          \pgftext[at=\pgfpoint{0.441cm}{0.82cm},left,top]{\color{tuered}\tiny\insertdate{}}%
+          \pgftext[at=\pgfpoint{0.441cm}{0.82cm},left,top]{\color{polytechblue}\tiny\insertdate{}}%
         \else%
-          \pgftext[at=\pgfpoint{0.441cm}{0.441cm},left,base]{\color{tuered}\tiny\insertdate{}}%
+          \pgftext[at=\pgfpoint{0.441cm}{0.441cm},left,base]{\color{polytechblue}\tiny\insertdate{}}%
         \fi%
         \pgfsetcolor{black}
         \pgfpathrectangle{\pgfpoint{0cm}{0cm}}{\pgfpoint{\the\paperwidth}{\the\paperheight}}
@@ -349,7 +349,7 @@
 \mode<all>
 
 \ifbeamer@tocslides
-  \newcommand{\tue@atbeginsection}{
+  \newcommand{\polytech@atbeginsection}{
     \bgroup
     \ifthenelse{\equal{\tocplain}{true}}{\usebackgroundtemplate{\drawbackground[plain]}}{}
     \hypersetup{
@@ -373,7 +373,7 @@
     \ifthenelse{\equal{\tocplain}{true}}{\addtocounter{framenumber}{-1}}
   }
   
-  \newcommand{\tue@atbeginsubsection}{
+  \newcommand{\polytech@atbeginsubsection}{
     \bgroup
     \ifthenelse{\equal{\tocplain}{true}}{\usebackgroundtemplate{\drawbackground[plain]}}{}
     \hypersetup{
@@ -393,10 +393,10 @@
     \ifthenelse{\equal{\tocplain}{true}}{\addtocounter{framenumber}{-1}}
   }
   
-  \AtBeginSection[] {\tue@atbeginsection}
-  \AtBeginSubsection[] {\tue@atbeginsubsection}
+  \AtBeginSection[] {\polytech@atbeginsection}
+  \AtBeginSubsection[] {\polytech@atbeginsubsection}
   \newcommand{\disabletocslidessection}{\AtBeginSection[]{}}
-  \newcommand{\enabletocslidessection}{\AtBeginSection[]{\tue@atbeginsection}}
+  \newcommand{\enabletocslidessection}{\AtBeginSection[]{\polytech@atbeginsection}}
   \newcommand{\disabletocslidessubsection}{\AtBeginSubsection[]{}}
-  \newcommand{\enabletocslidessubsection}{\AtBeginSubsection[]{\tue@atbeginsubsection}}
+  \newcommand{\enabletocslidessubsection}{\AtBeginSubsection[]{\polytech@atbeginsubsection}}
 \fi

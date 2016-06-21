@@ -6,46 +6,46 @@
 \RequirePackage{xparse}
 
 \DeclareOptionBeamer{theme}
-{\PassOptionsToPackage{theme=#1}{beamercolorthemetue2008plain}}
+{\PassOptionsToPackage{theme=#1}{beamercolorthemepolytechplain}}
 
 \DeclareOptionBeamer{department}
-{\PassOptionsToPackage{department=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{department=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{statustext}
-{\PassOptionsToPackage{statustext=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{statustext=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{titlelogo}
-{\PassOptionsToPackage{titlelogo=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{titlelogo=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{titlebgimage}
-{\PassOptionsToPackage{titlebgimage=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{titlebgimage=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{titlebgimagetransparency}
-{\PassOptionsToPackage{titlebgimagetransparency=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{titlebgimagetransparency=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{compress}{\beamer@compresstrue}
 
 \DeclareOptionBeamer{official}
-{\PassOptionsToPackage{official=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{official=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{innovation}
-{\PassOptionsToPackage{innovation=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{innovation=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{realpagenumbers}
-{\PassOptionsToPackage{realpagenumbers=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{realpagenumbers=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{tocslides}
-{\PassOptionsToPackage{tocslides=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{tocslides=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{tocplain}
-{\PassOptionsToPackage{tocplain=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{tocplain=#1}{beamerouterthemepolytechplain}}
 
 \DeclareOptionBeamer{tocstyle}
-{\PassOptionsToPackage{tocstyle=#1}{beamerouterthemetue2008plain}}
+{\PassOptionsToPackage{tocstyle=#1}{beamerouterthemepolytechplain}}
 
-\DeclareOptionBeamer{tuefont}
-{\ifthenelse{\equal{#1}{false}}{\PassOptionsToPackage{tuefont}{tuestyle2008}}{}}
-%As there are only two options we only need to pass tuefont as option when we want the non-default behavior
+\DeclareOptionBeamer{polytechfont}
+{\ifthenelse{\equal{#1}{false}}{\PassOptionsToPackage{polytechfont}{polytechstyle}}{}}
+%As there are only two options we only need to pass polytechfont as option when we want the non-default behavior
 
 \newcommand{\spp}{1}
 \DeclareOptionBeamer{slidesperpage}{\renewcommand{\spp}{#1}}
@@ -286,9 +286,9 @@
 \mode<presentation>
 
 \useinnertheme{default}
-\useoutertheme{tue2008plain}
-\usecolortheme{tue2008plain}
-\usefonttheme{tue2008plain}
+\useoutertheme{polytechplain}
+\usecolortheme{polytechplain}
+\usefonttheme{polytechplain}
 
 \hypersetup{
   colorlinks=true,

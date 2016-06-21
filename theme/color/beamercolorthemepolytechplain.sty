@@ -1,7 +1,7 @@
 \mode<presentation>
 
-\RequirePackage{tuestyle2008}
-\definecolor{themecolor}{HTML}{F73131} % default is PMS Warm Red
+\RequirePackage{polytechstyle}
+\definecolor{themecolor}{HTML}{023962} % default is Blue
 \definecolor{themetextcolor}{HTML}{FFFFFF}
 
 % -- http://tex.stackexchange.com/a/100213/23145
@@ -22,7 +22,7 @@
 % strip starting \# from string
 \newcommand\strippound[1]{\expandafter\ifx\expandafter\##1\else#1\fi}
 
-\DeclareOptionBeamer{theme}[red]{%
+\DeclareOptionBeamer{theme}[blue]{%
 % PMS Warm Red
 \ifthenelse{\equal{#1}{red}}{               \definecolor{themecolor}{HTML}{F73131}}{}
 \ifthenelse{\equal{#1}{pms-warm-red}}{      \definecolor{themecolor}{HTML}{F73131}}{}
@@ -30,11 +30,11 @@
 \ifthenelse{\equal{#1}{cyan}}{              \definecolor{themecolor}{HTML}{00A2DE}}{}
 \ifthenelse{\equal{#1}{pms-process-cyan}}{  \definecolor{themecolor}{HTML}{00A2DE}}{}
 % PMS 300
-\ifthenelse{\equal{#1}{blue}}{              \definecolor{themecolor}{HTML}{0066CC}}{}
-\ifthenelse{\equal{#1}{pms-300}}{           \definecolor{themecolor}{HTML}{0066CC}}{}
+\ifthenelse{\equal{#1}{blue}}{              \definecolor{themecolor}{HTML}{023962}}{}
+\ifthenelse{\equal{#1}{pms-300}}{           \definecolor{themecolor}{HTML}{023962}}{}
 % PMS 375
-\ifthenelse{\equal{#1}{green}}{             \definecolor{themecolor}{HTML}{84D200}}{}
-\ifthenelse{\equal{#1}{pms-375}}{           \definecolor{themecolor}{HTML}{84D200}}{}
+\ifthenelse{\equal{#1}{green}}{             \definecolor{themecolor}{HTML}{74bf1c}}{}
+\ifthenelse{\equal{#1}{pms-375}}{           \definecolor{themecolor}{HTML}{74bf1c}}{}
 % PMS 137
 \ifthenelse{\equal{#1}{orange}}{            \definecolor{themecolor}{HTML}{FF9A00}}{}
 \ifthenelse{\equal{#1}{pms-137}}{           \definecolor{themecolor}{HTML}{FF9A00}}{}
